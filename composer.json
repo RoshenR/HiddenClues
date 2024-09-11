@@ -1,0 +1,17 @@
+{
+    "name": "efrei/hiddenclues",
+    "description": "Un jeu ressemblant à Code Names",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Efrei\\Hiddenclues\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "RoshenR",
+            "email": "crisliath@gmail.com"
+        }
+    ],
+    "require": {}
+}
