@@ -19,8 +19,8 @@ require __DIR__.'/vendor/autoload.php'
 </div>
 
 <div id="play_game">
-    <button id="game_btn">
-        PLAY NOW !
+    <button>
+        <a href="game.php"><span>PLAY NOW !</span></a>
     </button>
 </div>
 
