@@ -10,6 +10,7 @@ require __DIR__.'/vendor/autoload.php'
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<section id="first_section">
 <div class="game_name">
     <div>
         <p id="first_name">Hidden Clues</p>
@@ -18,11 +19,18 @@ require __DIR__.'/vendor/autoload.php'
 </div>
 
 <div id="play_game">
-    <button>
-        <a href="game.php"><span>PLAY NOW !</span></a>
-    </button>
+    <a href="game.php" class="play_btn"><span>PLAY NOW</span></a>
 </div>
 
+<div id="rules">
+    <a href="#rules_section"><button class="rules_btn">
+        <span>RULES</span>
+    </button></a>
+
+</div>
+
+
+<footer>
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg"
      xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100%" height="100%" viewBox="0 0 1600 900" preserveAspectRatio="xMidYMax slice">
     <defs>
@@ -73,6 +81,25 @@ require __DIR__.'/vendor/autoload.php'
         </use>
     </g>
 </svg>
+</footer>
+</section>
+
+<section id="rules_section">
+    <div class="background_text">
+        <p>HiddenClues is a game for 2 players (for now, in the futur we may evolve the game).</p> <br/>
+        <p>There is a grid of 9 words. <br/> One player will be the SpyMaster, he will be the only one knowing the word.
+            <br/>
+        The other player is the Operative, he will have to find the word within the Clues that the SpyMaster will give him.
+        <br>
+        There will be 5 correct words, 4 bad words and 1 instant lose word</p>
+
+        <a href="#first_section"><button class="section_btn">
+                <span>BACK TO TOP</span>
+            </button></a>
+    </div>
+</section>
+
 
 </body>
+<script src="script.js"></script>
 </html>
