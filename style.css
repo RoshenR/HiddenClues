@@ -40,7 +40,7 @@ svg {
 
 .game_name p {
     margin: 0;
-    font-family: Bahnschrift;
+    font-family: Bahnschrift, serif;
 }
 
 #first_name {
@@ -107,7 +107,6 @@ a span {
 }
 
 button {
-    background-color: none;
     text-decoration: none;
     background-color: #0e3f63;
     border: none;
