@@ -12,7 +12,6 @@ require __DIR__.'/vendor/autoload.php'
 <body>
 <section id="first_section">
 <div class="game_name">
-
     <div>
         <p id="first_name">Hidden Clues</p>
         <p id="last_name">Will you find it?</p>

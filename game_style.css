@@ -1,0 +1,139 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    font-family: Arial, serif;
+    overflow-x: hidden;
+    background: rgba(255, 0, 0, 0.1);
+}
+
+svg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-color: #0e4166;
+    background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
+}
+
+header {
+    width: 80%;
+    height: 10%;
+    background-color: rgba(127, 255, 212, 0.5);
+    padding: 1rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: 85% 15%;
+}
+.game_name {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.game_name p {
+    margin: 0;
+    font-family: Bahnschrift, serif;
+}
+#first_name {
+    font-size: 30px;
+    line-height: 1;
+}
+
+#last_name {
+    font-size: 15px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: bolder;
+}
+#logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 80%;
+    padding: 0.5rem;
+    margin-inline: 0.5rem;
+}
+
+#container-card {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 3rem;
+    height: 500px;
+}
+.card {
+    background-color: navajowhite;
+    border: solid 1px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+}
+
+
+
+#sidebar {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    width: 15%;
+    background-color: #f3f3f3;
+    border-left: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0,0,0,0.2);
+}
+#player_name {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#chatbox {
+    display: flex;
+    flex-direction: column;
+    height: calc(100% - 100px);
+}
+#chat_messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    padding: 10px;
+    background-color: white;
+    margin-bottom: 10px;
+}
+#chat_input {
+    display: flex;
+}
+
+#chat_input input[type="text"] {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+#chat_input button {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+#chat_input button:hover {
+    background-color: #45a049;
+}
+
+svg {
+    border: solid 1px;
+}
