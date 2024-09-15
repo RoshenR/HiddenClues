@@ -49,7 +49,7 @@ svg {
 
 .game_name p {
     margin: 0;
-    font-family: Bahnschrift;
+    font-family: Bahnschrift, serif;
 }
 
 #first_name {
@@ -179,7 +179,7 @@ svg {
 
 #rules_section p {
     width: 50svw;
-    font-size: 40px;
+    font-size: 2rem;
     font-weight: lighter;
     letter-spacing: 1px;
     font-family: Broadway;
