@@ -9,14 +9,103 @@ html {
     padding: 0;
     margin: 0;
 }
-#first_section{
+
+/*HEADER*/
+
+/*HEADER*/
+
+header {
+    height: 12svh; /* Légèrement plus grand pour plus d'impact visuel */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     scroll-snap-align: start;
     scroll-snap-stop: always;
+    background-color: #083453; /* Couleur de fond inchangée */
+    position: relative;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); /* Ajoute une ombre pour donner un effet de profondeur */
+}
+
+.game_name {
+    margin-top: 0; /* Supprime la marge supérieure */
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+
+.game_name div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.game_name p {
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace; /* Police type machine à écrire pour l'effet espion */
+    color: #ffffff;
+}
+
+/* Texte principal */
+#first_name {
+    font-size: 50px;
+    line-height: 1;
+    letter-spacing: 3px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre portée pour un effet de mystère */
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+#first_name:hover {
+    transform: scale(1.05); /* Petit agrandissement au survol pour dynamiser */
+    letter-spacing: 5px; /* Espacement des lettres augmenté au survol */
+}
+
+/* Sous-titre */
+#last_name {
+    font-size: 25px;
+    line-height: 1;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); /* Petite ombre pour le sous-titre */
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+#last_name:hover {
+    transform: scale(1.02);
+    letter-spacing: 6px;
+}
+
+/* Effet de grille/fenêtre dans le fond du header */
+header::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.03);
+    z-index: 1;
+    transform: translate(-50%, -50%) ;
+    background-size: 10px 10px;
+    pointer-events: none;
+}
+
+
+
+
+#first_section{
     scroll-behavior: smooth;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100svh;
+    height: 90svh;
 }
 svg {
     z-index: -1;
@@ -30,44 +119,13 @@ svg {
     background-color: #0e4166;
     background-image: linear-gradient(to bottom, rgba(14, 65, 102, 0.86), #0e4166);
 }
-.game_name {
-    margin-top: 3svh;
-    z-index: 3;
-    height: auto;
-    width: 50svw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.game_name div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.game_name p {
-    margin: 0;
-    font-family: Bahnschrift, serif;
-}
-
-#first_name {
-    font-size: 90px;
-    line-height: 1;
-}
 
 #play_game {
     margin-top: 20svh;
 }
 
-#last_name {
-    font-size: 25px;
-    line-height: 1;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    font-weight: bolder;
-}
+
 
 /* PLAY BUTTON SECTION */
 .play_btn {
