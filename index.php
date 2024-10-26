@@ -8,7 +8,7 @@ $mustache = new Mustache_Engine([
 ]);
 
 // Détection de la page à afficher (par défaut 'page1')
-$page = isset($_GET['page']) && in_array($_GET['page'], ['page1', 'page2']) ? $_GET['page'] : 'page1';
+$page = isset($_GET['page']) && in_array($_GET['page'], ['lobby', 'game']) ? $_GET['page'] : 'lobby';
 
 // Rendu du layout avec le contenu de la page choisie
 echo $mustache->render("layout", [
